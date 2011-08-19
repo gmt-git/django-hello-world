@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Hello! This is a Django Hello World Project.</h3>
+
+<p>You can now go to <a href="{% url admin:index %}">admin interface</a> and change admin pasword</p>
+<p>Currently next users are registered: {% for user in users %}{{ user.username }} {% endfor %}</p>
+{% endblock content %}
